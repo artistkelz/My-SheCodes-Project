@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Weather App</title>
+  <meta charset="UTF-8" />
+  </head>
+
+<body>
+	<div id="app"></div>
+
+	<script src="src/index.js">
+	</script>
+</body>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=B612+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Rye&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+  <body>
+    <div class="container">
+      <span class="border rounded">
+        <form class="search" id="search-button">
+            <div class="newCity"  >
+          <input type="text" placeholder="🔍 Enter City" id="enterCity" />
+          <button type="submit" class="btn btn-light" >Find your City</button>
+          <button class="locationButton" id="geoLocate">Current Location</button>
+        </div>
+    </form>
+    <div class="card-body currentCity">
+        <h1>Kelowna, BC</h1>
+       <i class="fas fa-moon moon"></i>
+        <div class="temp" 
+        <p id="temperature">-1</p>  
+        <span class= "units"><a href="#" id="celsius-link">°C</a>|
+          <a href="#" id="fahrenheit-link">°F</a>
+        </span></div>
+        </div>
+        
+        <div class="currently">
+            <h2>Currently</h2>
+          <div class="date-time" id="today">Sunday, Nov 27 10:47pm</div>
+          <div class="skies" id="skies">Clear Skies</div>
+          <div class="Wind" id="wind">5 <span>km/hr</span></div>
+          <div class="Humidity" id="humidity">90<span>%</span></div>
+          <div class="Sunrise">Sunrise @7:02AM</div>
+          <div class="Sunset">Sunset @4:22PM</div>
+        </div>
+      </span>
+
+      <h3 class="days">The Next 5 Days...</h3>
+      <div class="row forcast">
+          
+        <div class="card-group">
+
+<div class="col-1" style="width: 150px">
+          <div class="card">
+            <i class="fas fa-sun sun"></i>
+            <div class="card-body">
+              <h5 class="card-title text-center">4°<strong>/0°</strong></h5>
+              <p class="card-text text-center">Monday</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-1" style="width: 150px">
+          <div class="card">
+            <i class="fas fa-cloud-sun cloudSun"></i>
+            <div class="card-body">
+              <h5 class="card-title text-center">8°/<strong>2°</strong></h5>
+              <p class="card-text text-center">Tuesday</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-1" style="width: 150px">
+          <div class="card">
+            <i class="fas fa-cloud-sun cloudSun"></i>
+            <div class="card-body">
+              <h5 class="card-title text-center">2°/<strong>-2°</strong></h5>
+              <p class="card-text text-center">Wednesday</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-1" style="width: 150px">
+          <div class="card">
+          <i class="fas fa-cloud cloud"></i>
+            <div class="card-body">
+              <h5 class="card-title text-center">10°/<strong>3°</strong></h5>
+              <p class="card-text text-center">Thursday</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-1" style="width: 150px">
+          <div class="card">
+            <i class="fas fa-sun sun"></i>
+            <div class="card-body">
+              <h5 class="card-title text-center">2°/<strong>-3°</strong></h5>
+              <p class="card-text text-center">Friday</p>
+            </div>
+          </div>
+        </div>
+    </div>
+  </body>
+
+  <style src="src/styles.css"></style>
+  <script
+    src="https://kit.fontawesome.com/af115dbe03.js"
+		crossorigin="anonymous"
+		src="src/index.js"
+  ></script>
+</html>
