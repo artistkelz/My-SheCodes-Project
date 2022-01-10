@@ -1,4 +1,4 @@
-import "./styles.css";
+import "src/styles.css";
 // Search Engine
 function displayWeather(response) {
   console.log(response);
